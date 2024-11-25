@@ -9,7 +9,7 @@ const projects = [
   {
     name: "Autopilott Marketing",
     role: "marketing & ops",
-    period: "Feb &apos;23 - Sept &apos;24",
+    period: "Feb '23 - Sept '24",
     type: "Full-time",
     details: "Full-time role focusing on marketing strategies and operations."
   },
