@@ -81,37 +81,36 @@ export default function Portfolio() {
       <div className="content">
         <section className="mb-8">
           <h1 className="text-2xl font-bold mb-4 dark:text-white">
-            hey, i'm aditya 
+            hey, i{"'"}m aditya 
           </h1>
           <p className="mb-2 dark:text-neutral-300">
-            at age of 6, i found i could draw iron man well. like really well. ;) & at 
-            13, i sold my first "product" ~ a book that i wrote.
+            i found i could draw iron man well. like really well. ;) {"&"} at 13, i sold my first {"\""}product{"\""}~ a book that i wrote.
           </p>
           <p className="mb-2 dark:text-neutral-300">
-            and it's been design + marketing ever since then.
+            and it{"'"}s been design + marketing ever since then.
           </p>
           <p className="mb-2 dark:text-neutral-300">
-            in 12th grade i started out by designing insta posts for my friend's 
+            in 12th grade i started out by designing insta posts for my friend{"'"}s 
             NGO. later moved into helping a bunch of noida kids promote health and 
             wellbeing topics to genzs on insta i.e. *HealthEssencia*. (ofc it was just remote 
             internships tho).
           </p>
           <p className="mb-2 dark:text-neutral-300">
             After working at HealthEssencia for almost a year, I felt smtg was 
-            missing. Just designing wasn't fun.
+            missing. Just designing wasn{"'"}t fun.
           </p>
           <p className="mb-2 dark:text-white">
             So, I explored marketing & content too. I also enrolled myself for 
             btech cse alongside ;)
           </p>
           <p className="mb-2 dark:text-white">
-            i've worked on a bunch of stuff since, worked (offline) at a 
+            i{"'"}ve worked on a bunch of stuff since, worked (offline) at a 
             marketing agency for abt 1.5 yrs, built communities, started a smol podcast, 
             and sm more.
           </p>
           <p className="mb-2 dark:text-white">
             in 2023, i was introduced to web3 by one of my close friends. 
-            couldn't exactly understand then, so didn't go further.
+            couldn{"'"}t exactly understand then, so didn{"'"}t go further.
           </p>
           <p className="mb-2 dark:text-white">
             met manish & sammoy bhaiya at H4B S03, clarified my doubts for 
@@ -123,7 +122,7 @@ export default function Portfolio() {
         </section>
         <section id="projects" className="mb-8">
           <h2 className="text-xl font-bold mb-4">
-            projects i've worked on or am currently working on
+            projects i{"'"}ve worked on or am currently working on
           </h2>
 
           {projects.map((project, index) => (
