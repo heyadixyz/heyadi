@@ -16,13 +16,13 @@ const projects = [
   {
     name: "Hack4Bengal",
     role: "marketing things",
-    period: "Feb &apos;23 - Sept &apos;24",
+    period: "Feb '23 - Sept '24",
     type: "Part-time/volunteer"
   },
   {
     name: "Health Essencia",
     role: "design + content work",
-    period: "Feb &apos;23 - Sept &apos;24",
+    period: "Feb '23 - Sept '24",
     type: "Part-time"
   }
 ]
@@ -36,10 +36,8 @@ export default function Portfolio() {
       acc[index] = false
       return acc
     }, {} as { [key: string]: boolean })
-    setOpenStates(initialStates)
-  }, [])
 
-  useEffect(() => {
+    setOpenStates(initialStates)
     setIsMounted(true)
   }, [])
 
@@ -55,7 +53,7 @@ export default function Portfolio() {
   }
 
   return (
-    <div className="container">
+    <div className="container dark:bg-neutral-900 dark:text-white">
       <nav className="nav">
         <ul className="flex justify-center space-x-6">
           <li>
@@ -80,45 +78,54 @@ export default function Portfolio() {
           </li>
         </ul>
       </nav>
-
       <div className="content">
         <section className="mb-8">
-          <h1 className="text-2xl font-bold mb-4">
-            hey, i&apos;m aditya 👋
+          <h1 className="text-2xl font-bold mb-4 dark:text-white">
+            hey, i'm aditya 
           </h1>
-          <p className="mb-2">
-            at age of 6, i found i could draw iron man well. like really well. ;) &amp; at 13, i sold my first &quot;product&quot; ~ a book that i wrote.
+          <p className="mb-2 dark:text-neutral-300">
+            at age of 6, i found i could draw iron man well. like really well. ;) & at 
+            13, i sold my first "product" ~ a book that i wrote.
           </p>
-          <p className="mb-2">
-            and it&apos;s been design + marketing ever since then.
+          <p className="mb-2 dark:text-neutral-300">
+            and it's been design + marketing ever since then.
           </p>
-          <p className="mb-2">
-            in 12th grade i started out by designing insta posts for my friend&apos;s NGO. later moved into helping a bunch of noida kids promote health and wellbeing topics to genzs on insta i.e. *HealthEssencia*. (ofc it was just remote internships tho).
+          <p className="mb-2 dark:text-neutral-300">
+            in 12th grade i started out by designing insta posts for my friend's 
+            NGO. later moved into helping a bunch of noida kids promote health and 
+            wellbeing topics to genzs on insta i.e. *HealthEssencia*. (ofc it was just remote 
+            internships tho).
           </p>
-          <p className="mb-2">
-            After working at HealthEssencia for almost a year, I felt smtg was missing. Just designing wasn&apos;t fun.
+          <p className="mb-2 dark:text-neutral-300">
+            After working at HealthEssencia for almost a year, I felt smtg was 
+            missing. Just designing wasn't fun.
           </p>
-          <p className="mb-2">
-            So, I explored marketing &amp; content too. I also enrolled myself for btech cse alongside ;)
+          <p className="mb-2 dark:text-white">
+            So, I explored marketing & content too. I also enrolled myself for 
+            btech cse alongside ;)
           </p>
-          <p className="mb-2">
-            i&apos;ve worked on a bunch of stuff since, worked (offline) at a marketing agency for abt 1.5 yrs, built communities, started a smol podcast, and sm more.
+          <p className="mb-2 dark:text-white">
+            i've worked on a bunch of stuff since, worked (offline) at a 
+            marketing agency for abt 1.5 yrs, built communities, started a smol podcast, 
+            and sm more.
           </p>
-          <p className="mb-2">
-            in 2023, i was introduced to web3 by one of my close friends. couldn&apos;t exactly understand then, so didn&apos;t go further.
+          <p className="mb-2 dark:text-white">
+            in 2023, i was introduced to web3 by one of my close friends. 
+            couldn't exactly understand then, so didn't go further.
           </p>
-          <p className="mb-2">
-            met manish &amp; sammoy bhaiya at H4B S03, clarified my doubts for web3 and now im more bullish than ever.
+          <p className="mb-2 dark:text-white">
+            met manish & sammoy bhaiya at H4B S03, clarified my doubts for 
+            web3 and now im more bullish than ever.
           </p>
-          <p className="mb-2">
+          <p className="mb-2 dark:text-white">
             currently working on myself for BD and marketing roles in web3.
           </p>
         </section>
-
         <section id="projects" className="mb-8">
           <h2 className="text-xl font-bold mb-4">
-            projects i&apos;ve worked on or am currently working on
+            projects i've worked on or am currently working on
           </h2>
+
           {projects.map((project, index) => (
             <div key={index} className="project mb-4 last:mb-0">
               <div className="flex items-start">
@@ -163,7 +170,6 @@ export default function Portfolio() {
             </div>
           ))}
         </section>
-
         <footer className="text-center mt-8">
           <p className="mb-4">wanna build something with me or just wanna say hi?</p>
           <a 
@@ -205,7 +211,8 @@ export default function Portfolio() {
             </a>
           </div>
         </footer>
-      </div>
+      </div> 
     </div>
   )
 }
+

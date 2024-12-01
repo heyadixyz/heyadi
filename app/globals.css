@@ -7,7 +7,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.5;
   color: #333;
+  @apply bg-white dark:bg-neutral-900;
+  
 }
+
 
 .container {
   max-width: 42rem;
@@ -145,4 +148,3 @@ footer {
 .social-icons a:hover {
   color: #3b82f6;
 }
-
