@@ -92,12 +92,12 @@ export default function Portfolio() {
       <nav className="nav">
         <ul className="flex justify-center space-x-6">
           <li>
-            <Link href="#" className="text-blue-500 hover:underline">
+            <Link href="/" className="text-blue-500 hover:underline">
               Home
             </Link>
           </li>
           <li>
-            <Link href="#projects" className="text-blue-500 hover:underline">
+            <Link href="/POW" className="text-blue-500 hover:underline">
               POW
             </Link>
           </li>

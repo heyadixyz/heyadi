@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from 'next-themes'
 import ThemeToggle from './ThemeToggle'
+import { Link } from "lucide-react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,6 +33,30 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        {/* <nav className="nav">
+        <ul className="flex justify-center space-x-6">
+          <li>
+            <Link href="#" className="text-blue-500 hover:underline">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href="/POW" className="text-blue-500 hover:underline">
+              POW
+            </Link>
+          </li>
+          <li>
+            <Link href="#" className="text-blue-500 hover:underline">
+              Resume
+            </Link>
+          </li>
+          <li>
+            <Link href="#" className="text-blue-500 hover:underline">
+              Blogs
+            </Link>
+          </li>
+        </ul>
+      </nav> */}
           {children}
           <ThemeToggle />
         </ThemeProvider>
