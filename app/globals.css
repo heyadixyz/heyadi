@@ -11,6 +11,11 @@ body {
   
 }
 
+a {
+  color: rgb(67, 67, 230); 
+  text-decoration: underline;
+}
+
 
 .container {
   max-width: 42rem;
