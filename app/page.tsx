@@ -108,7 +108,7 @@ export default function Portfolio() {
             </Link>
           </li>
           <li>
-            <Link href="#" className="text-blue-500 hover:underline">
+            <Link href="/Resume" className="text-blue-500 hover:underline">
               Resume
             </Link>
           </li>
