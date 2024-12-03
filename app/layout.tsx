@@ -1,19 +1,29 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Inter } from "next/font/google";
+// import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from 'next-themes'
 import ThemeToggle from './ThemeToggle'
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
 
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+// const geistSans = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+
+
+
+// const geistMono = localFont({
+//   src: "./fonts/GeistMonoVF.woff",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap", // Ensures the font displays correctly as it loads
 });
 
 export const metadata: Metadata = {
@@ -29,32 +39,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         {/* <nav className="nav">
-        <ul className="flex justify-center space-x-6">
-          <li>
-            <Link href="#" className="text-blue-500 hover:underline">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="/POW" className="text-blue-500 hover:underline">
-              POW
-            </Link>
-          </li>
-          <li>
-            <Link href="#" className="text-blue-500 hover:underline">
-              Resume
-            </Link>
-          </li>
-          <li>
-            <Link href="#" className="text-blue-500 hover:underline">
-              Blogs
-            </Link>
-          </li>
-        </ul>
+        
       </nav> */}
           {children}
           <ThemeToggle />

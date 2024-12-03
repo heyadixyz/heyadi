@@ -4,18 +4,20 @@
 
 /* Custom styles */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--font-inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif);
   line-height: 1.5;
   color: #333;
   /* @apply bg-white dark:bg-neutral-900; */
-  
+}
+
+button, input, textarea, select {
+  font-family: var(--font-inter, sans-serif);
 }
 
 a {
   color: rgb(67, 67, 230); 
   text-decoration: underline;
 }
-
 
 .container {
   max-width: 42rem;
@@ -40,6 +42,7 @@ a {
 }
 
 .nav a {
+  font-family: var(--font-inter, sans-serif);
   color: #3b82f6;
   text-decoration: none;
 }
