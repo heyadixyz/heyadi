@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { ChevronDown, ChevronUp, Twitter, Linkedin, Dribbble, FileText, Instagram } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 import './globals.css'
 
 const projects = [
@@ -11,6 +12,7 @@ const projects = [
     role: "Marketing Lead",
     period: "Nov '23 - Present",
     type: "Part-time (Community)",
+    logo: "/logos/hack4bengal-logo.png",
     details: [
       "- handled their twitter acc of 1.4k (posting, RT, QT, reply, etc)",
       "- created 2 of my best fav. marketing campaigns both on insta & x",
@@ -23,6 +25,7 @@ const projects = [
     role: "Marketing & Ops",
     period: "Feb '23 - Sept '24",
     type: "Full-time",
+    logo: "/logos/autopilott-logo.png",
     details: [
       "- helped 10+ service based biz get 25% more sales within <90 days working w them",
       "- took a few sales calls, 100s of cold calling, outreach + followups",
@@ -35,6 +38,7 @@ const projects = [
     role: "Design + Content",
     period: "Jun '22 - Jun '23",
     type: "Part-time",
+    logo: "/logos/healthessencia-logo.png",
     details: [
       "- made tons of frenz + >30 social media designs",
       "- did 250 → 480 insta followers in 2 weeks",
@@ -45,6 +49,7 @@ const projects = [
     role: "Design intern",
     period: "Feb '24 - Mar '24",
     type: "Internship",
+    logo: "/logos/dapptales-logo.png",
     details: [
       "- responsible to learn + design web3 focused creatives",
       "- learnt imp of quality work & design ofc",
@@ -55,6 +60,7 @@ const projects = [
     role: "Design + Content intern",
     period: "Feb '23 - April '23",
     type: "Internship",
+    logo: "/logos/codelance-logo.png",
     details: [
       "- made a few socials posts for them",
       "- worked on their brand identity + content side",
@@ -159,10 +165,22 @@ export default function Portfolio() {
           {projects.map((project, index) => (
             <div key={index} className="project mb-4 last:mb-0">
               <div className="flex items-start">
+              {project.logo ? (
+                <div className="w-12 h-12 mr-4 flex-shrink-0">
+                  <Image 
+                    src={project.logo} 
+                    alt={`${project.name} logo`} 
+                    width={48} 
+                    height={48} 
+                    className="rounded-full object-cover"
+                  />
+                </div>
+              ) : (
                 <div 
                   className="w-12 h-12 bg-gray-200 rounded-full mr-4 flex-shrink-0" 
                   aria-hidden="true"
                 />
+              )}
                 <div className="flex-grow">
                   <div className="flex justify-between items-start">
                     <div>
@@ -256,4 +274,3 @@ export default function Portfolio() {
     </div>
   )
 }
-
