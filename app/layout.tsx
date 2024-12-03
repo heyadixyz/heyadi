@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from 'next-themes'
 import ThemeToggle from './ThemeToggle'
-import { Link } from "lucide-react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

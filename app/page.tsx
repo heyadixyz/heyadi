@@ -88,7 +88,7 @@ export default function Portfolio() {
   }
 
   return (
-    <div className="container dark:bg-neutral-900 dark:text-white">
+    <div className="container dark:bg-neutral-1000 dark:text-white">
       <nav className="nav">
         <ul className="flex justify-center space-x-6">
           <li>
