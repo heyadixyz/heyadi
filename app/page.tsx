@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { ChevronDown, ChevronUp, Twitter, Linkedin, Dribbble, FileText, Instagram } from 'lucide-react'
+import { Twitter, Linkedin, Dribbble, FileText, Instagram } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import './globals.css'

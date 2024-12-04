@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ChevronDown, ChevronUp, Twitter, Linkedin, Dribbble, FileText, Instagram } from 'lucide-react'
+import { Twitter, Linkedin, Dribbble, FileText, Instagram } from 'lucide-react'
 // import { ExternalLink } from 'lucide-react'
 
 // const powItems = [
