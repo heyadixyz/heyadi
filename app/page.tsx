@@ -113,7 +113,7 @@ export default function Portfolio() {
             </Link>
           </li>
           <li>
-            <Link href="#" className="text-blue-500 hover:underline">
+            <Link href="https://medium.com/@heyadixyz" className="text-blue-500 hover:underline">
               Blogs
             </Link>
           </li>
@@ -126,19 +126,19 @@ export default function Portfolio() {
             <span style={{ fontWeight: 'normal', fontSize: '0.7em' }}>(looking for BD & Marketing roles)</span>
           </h1>
           
-          <p className="mb-2 dark:text-neutral-300">
+          <p className="mb-2 dark:text-white">
             at age of 6, i found i could draw iron man well. like really well ;) <br />
             & at 13, i sold my first {"\""}<Link href="https://www.flipkart.com/hallucination-of-life/p/itmf34sfgchuwgyf?pid=9788193701805&lid=LSTBOK9788193701805IDOGDY&marketplace=FLIPKART&q=hallucination+of+life&store=search.flipkart.com&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=14e73f8e-2c38-4d4a-8ee4-e267f9c14146.9788193701805.SEARCH&ppt=hp&ppn=homepage&ssid=l6apy6p3kg0000001733122908953&qH=b9fa622a26eb22ee">product</Link>{"\""}~ a book i wrote
           </p>
-          <p className="mb-2 dark:text-neutral-300">
+          <p className="mb-2 dark:text-white">
             and it{"'"}s been design + marketing ever since then
           </p>
-          <p className="mb-2 dark:text-neutral-300">
+          <p className="mb-2 dark:text-white">
             in grade 12 started out <br />
             - designing insta posts for my <Link href="https://instagram.com/do4nation578/">friend{"'"}s NGO</Link> <br />
             - helped a bunch of genz{"'"}s promote health & wellbeing topics to genzs on <Link href="instagram.com/healthessencia/">insta</Link>
           </p>
-          <p className="mb-2 dark:text-neutral-300">
+          <p className="mb-2 dark:text-white">
             After designing for almost a year, I felt smtg was missing. Just designing wasn{"'"}t so much of fun now
           </p>
           <p className="mb-2 dark:text-white">
@@ -239,31 +239,31 @@ export default function Portfolio() {
           </a>
           <div className="social-icons flex justify-center space-x-4">
             <a 
-              href="x.com/heyadixyz" 
+              href="https://x.com/heyadixyz" 
               className="text-gray-600 hover:text-blue-500 transition-colors"
             >
               <Twitter size={24} aria-label="Twitter" />
             </a>
             <a 
-              href="linkedin.com/in/heyadixyz" 
+              href="https://linkedin.com/in/heyadixyz" 
               className="text-gray-600 hover:text-blue-500 transition-colors"
             >
               <Linkedin size={24} aria-label="LinkedIn" />
             </a>
             <a 
-              href="dribbble.com/heyadixyz" 
+              href="https://dribbble.com/withadityya" 
               className="text-gray-600 hover:text-blue-500 transition-colors"
             >
               <Dribbble size={24} aria-label="Dribbble" />
             </a>
             <a 
-              href="#" 
+              href="https://medium.com/@heyadixyz" 
               className="text-gray-600 hover:text-blue-500 transition-colors"
             >
               <FileText size={24} aria-label="Medium" />
             </a>
             <a 
-              href="instagram.com/heyadixyz" 
+              href="https://instagram.com/heyadixyz" 
               className="text-gray-600 hover:text-blue-500 transition-colors"
             >
               <Instagram size={24} aria-label="Instagram" />

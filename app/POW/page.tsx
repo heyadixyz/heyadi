@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { ChevronDown, ChevronUp, Twitter, Linkedin, Dribbble, FileText, Instagram } from 'lucide-react'
 // import { ExternalLink } from 'lucide-react'
 
 // const powItems = [
@@ -53,7 +54,7 @@ export default function POWPage() {
             </Link>
           </li>
           <li>
-            <Link href="#" className="text-blue-500 hover:underline">
+            <Link href="https://medium.com/@heyadixyz" className="text-blue-500 hover:underline">
               Blogs
             </Link>
           </li>
@@ -92,7 +93,49 @@ export default function POWPage() {
           </p>
           
         </section>
-        
+        <footer className="text-center mt-8">
+          <p className="mb-4">i love connecting with cool people and learn, learn, and learn… <br />
+          How cool are u? lmk
+          </p>
+          <a 
+            href="mailto:aditya03officialny@gmail.com" 
+            className="text-blue-500 mb-6 inline-block"
+          >
+            aditya03officialny@gmail.com
+          </a>
+          <div className="social-icons flex justify-center space-x-4">
+            <a 
+              href="https://x.com/heyadixyz" 
+              className="text-gray-600 hover:text-blue-500 transition-colors"
+            >
+              <Twitter size={24} aria-label="Twitter" />
+            </a>
+            <a 
+              href="https://linkedin.com/in/heyadixyz" 
+              className="text-gray-600 hover:text-blue-500 transition-colors"
+            >
+              <Linkedin size={24} aria-label="LinkedIn" />
+            </a>
+            <a 
+              href="https://dribbble.com/withadityya" 
+              className="text-gray-600 hover:text-blue-500 transition-colors"
+            >
+              <Dribbble size={24} aria-label="Dribbble" />
+            </a>
+            <a 
+              href="https://medium.com/@heyadixyz" 
+              className="text-gray-600 hover:text-blue-500 transition-colors"
+            >
+              <FileText size={24} aria-label="Medium" />
+            </a>
+            <a 
+              href="https://instagram.com/heyadixyz" 
+              className="text-gray-600 hover:text-blue-500 transition-colors"
+            >
+              <Instagram size={24} aria-label="Instagram" />
+            </a>
+          </div>
+        </footer>
       </div>
     </div></>
   )
