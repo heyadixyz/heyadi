@@ -10,7 +10,7 @@ export default function ResumePage() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowMessage(false)
-      router.push('https://drive.google.com/file/d/1w8mfurxpSRDKPOogSXeb2rncFO0APeqP/view?usp=sharing')
+      router.push('https://drive.google.com/file/d/1FLka7N_vGcGd6kY585Bv1WqVEcfnG7k2/view?usp=sharing')
     }, 2000)
 
     return () => clearTimeout(timer)
